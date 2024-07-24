@@ -1,0 +1,8 @@
+<html>
+    <h1>Weighbridge Tickets</h1>
+<ul>
+    {% for ticket in tickets %}
+        <li>Ticket {{ ticket.id }} for {{ ticket.truck.vehicle_number }} - {{ ticket.date_time }}</li>
+    {% endfor %}
+</ul>
+</html>

@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truck Management System</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1>Welcome to the Truck Management System</h1>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <a href="{% url 'login' %}" class="btn btn-primary btn-block">Login</a>
-            </div>
-            <div class="col-md-4">
-                <a href="{% url 'register' %}" class="btn btn-secondary btn-block">Register</a>
-            </div>
-            <div class="col-md-4">
-                <a href="{% url 'weighbridge_ticket' %}" class="btn btn-secondary btn-block">Get weighbridge ticket</a>
-
-            </div>
-        </div>
+    <div class="container">
+        <h1>Truck Management System</h1>
+        <a href="/add_truck" class="btn">Add Truck</a>
+        <a href="/login" class="btn">Login</a>
+        <a href="/register" class="btn">Register</a>
+        <a href="/weighbridge_ticket" class="btn">Download Weighbridge Ticket</a>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

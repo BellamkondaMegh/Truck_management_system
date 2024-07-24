@@ -1,0 +1,8 @@
+
+<html>
+    <h1>Weighbridge Ticket</h1>
+    <p>Company: {{ ticket.truck.company_name }}</p>
+    <p>Vehicle Number: {{ ticket.truck.vehicle_number }}</p>
+    <p>Date and Time: {{ ticket.date_time }}</p>
+    <a href="{% url 'download_ticket' ticket.id %}">Download Ticket as PDF</a>
+</html>

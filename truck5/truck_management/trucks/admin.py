@@ -1,9 +1,8 @@
 from django.contrib import admin
-from trucks.models import Truck, Company, CustomerSupport
+from trucks.models import Material, Truck,  WeighbridgeTicket
 
 admin.site.register(Truck)
-admin.site.register(Company)
-admin.site.register(CustomerSupport)
+admin.site.register(Material)
+admin.site.register(WeighbridgeTicket)
 
-class TruckAdmin(admin.ModelAdmin):
-    list_display = ('vehicle_number', 'company_name')
+

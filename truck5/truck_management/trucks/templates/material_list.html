@@ -1,0 +1,8 @@
+<html>
+    <h1>Material List</h1>
+<ul>
+    {% for material in materials %}
+        <li>{{ material.product_name }} - {{ material.grade }} - {{ material.density }}</li>
+    {% endfor %}
+</ul>
+</html>
